@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/AuxWrap';
-import Viewer from '../../components/Viewer';
+import BuildViews from  '../../components/BuildViews';
 
-class Gallery extends Component {
+class Builder extends Component {
   state = {
     viewItems:{
       Audio: 3,
@@ -14,10 +14,10 @@ class Gallery extends Component {
   render() {
     return(
       <Aux>
-        <Viewer viewItems={this.state.viewItems} />
+        <BuildViews viewItems={this.state.viewItems} />
       </Aux>
     );
   }
 }
 
-export default Gallery;
+export default Builder;

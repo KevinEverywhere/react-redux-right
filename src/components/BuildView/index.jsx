@@ -8,21 +8,27 @@ class BuildView extends Component{
     let item = null;
     switch (this.props.type) {
       case 'Audio':
-        item = <div className={classes.Audio}>Build Audio</div>
+        item = <div className={classes.BuildAudio}>Build Audio</div>
         break;
       case 'Video':
-        item = <div className={classes.Video}>Build Video</div>
+        item = <div className={classes.BuildVideo}>Build Video</div>
         break;
       case 'Html':
-        item = <div className={classes.Html}>Build Html</div>
+        item = <div className={classes.BuildHtml}>Build Html</div>
         break;
       case 'Image':
-        item = <div className={classes.Image}>Build Image</div>
+        item = <div className={classes.BuildImage}>Build Image</div>
         break;
       default:
         break;
     }
-    return <Aux>{item}</Aux>;
+    return <Aux>
+    <div className={classes.BuildView}>
+      <div className={classes.Less}>Less</div>
+      <div className={classes.More}>More</div>
+      {item}
+    </div>
+    </Aux>;
   }
 }
 

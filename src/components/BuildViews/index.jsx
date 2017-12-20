@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './BuildViews.css';
 import BuildView from '../BuildView';
 
 const buildViews = props => {

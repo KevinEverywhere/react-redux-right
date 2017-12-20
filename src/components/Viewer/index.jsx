@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './Viewer.css';
 import ViewItem from '../ViewItem';
 
 const viewer = props => {
